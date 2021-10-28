@@ -54,21 +54,21 @@ function gradle_test() {
 function git_update() {
   DIR=$1
   echo -e "#git  update in directory $DIR#"
-  cd $DIR && git add . && git commit -m "update" && git push -u origin develop
+  cd $DIR && git add . && git commit -m "update" && git push -u origin long
   echo -e "\n"
 }
 
 function git_bug() {
   DIR=$1
   echo -e "#git  fix bug in directory $DIR#"
-  cd $DIR && git add . && git commit -m "fix bug" && git push -u origin develop
+  cd $DIR && git add . && git commit -m "fix bug" && git push -u origin long
   echo -e "\n"
 }
 
 function git_clean() {
   DIR=$1
   echo -e "#git clean code in directory $DIR#"
-  cd $DIR && git add . && git commit -m "clean code" && git push -u origin develop
+  cd $DIR && git add . && git commit -m "clean code" && git push -u origin long
   echo -e "\n"
 }
 
