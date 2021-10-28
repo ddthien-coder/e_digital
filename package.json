@@ -1,7 +1,16 @@
 {
   "name": "e_digital",
   "version": "0.1.0",
-  "private": true,
+  "description": "",
+  "main": "index.js",
+  "author": {
+    "name": "ddthien",
+    "email": "jungjihoonkr97@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ddthien-coder/e_digital.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
