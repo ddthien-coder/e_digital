@@ -37,20 +37,6 @@ function git_pull() {
   echo -e "\n"
 }
 
-function gradle_build() {
-  DIR=$1
-  echo -e "#gradle build in directory $DIR#"
-  cd $DIR && gradle clean build -x test eclipse
-  echo -e "\n"
-}
-
-function gradle_test() {
-  DIR=$1
-  echo -e "#gradle build in directory $DIR#"
-  cd $DIR && gradle clean build eclipse
-  echo -e "\n"
-}
-
 function git_update() {
   DIR=$1
   echo -e "#git  update in directory $DIR#"
@@ -79,10 +65,6 @@ shift
 
 if [ "$COMMAND" = "pull" ] ; then
   git_pull $ROOT_DIR
-elif [ "$COMMAND" = "build" ] ; then
-  gradle_build $ROOT_DIR
-elif [ "$COMMAND" = "test" ] ; then
-  gradle_test $ROOT_DIR
 elif [ "$COMMAND" = "update" ] ; then
   git_update $ROOT_DIR
 elif [ "$COMMAND" = "bug" ] ; then
@@ -91,8 +73,6 @@ elif [ "$COMMAND" = "clean" ] ; then
   git_clean $ROOT_DIR
 else
   echo 'Usage: '
-  echo 'pull: pull to your branch'
-  echo 'build: build project with gradle'
-  echo 'test: build project with gradle with unitTest'
+  echo 'pull: pull to develop branch'
   echo 'update, bug, clean : git push origin dev branch'
 fi
