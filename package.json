@@ -1,11 +1,11 @@
 {
   "name": "e_digital",
   "version": "0.1.0",
-  "private": true,
   "author": {
     "name": "ddthien",
     "email": "jungjihoonkr97@gmail.com"
   },
+  "description": "vue, vuex, vue-router, app, e_digital",
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build"
